@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap');
+
+:root {
+    --primary-color: #3c1f76;
+    /*meteorite*/
+    --secondary-color: #17f5b9;
+    /*aqua*/
+    --tertiary-color: #ffa876;
+    /*hit pink*/
+}
+
+body {
+    font-family: "Prompt", sans-serif;
+    text-align: center;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+  
+}
+
+.container {
+    margin: 2rem;
+}
+
+.questioncontainer {
+    display: block;
+}
+
+label {
+    display: block;
+    font-weight: bolder;
+}
+
+button {
+    display: block;
+    margin: 1rem auto;
+}
+
+input {
+    display: block;
+    margin: auto;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;    
+    bottom: 0;
+    /* max-height: 20%; */
+    color: white;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    padding-inline-start: 0px;
+  }
+  
+  .footer .footer-header {
+    font-weight: bold;
+    text-align: center;
+    font-size: large;
+    padding: 1rem 0rem 1rem 0rem;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+  }
+
+  img {
+    width: 30px;
+    margin: 2%;
+    max-width: fit-content;
+  }
+
+  .navigation {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  
+  .navigation .nav-brand {
+    font-weight: bold;
+  }
+  
+  .nav-brand a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .navigation .nav-pills {
+    text-align: right;
+    margin: 0.6rem 1rem;
+  }
+  
+  .navigation .link {
+    color: white;
+  }
+  
+  
