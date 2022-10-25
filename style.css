@@ -1,20 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;1,100&display=swap");
 
 :root {
-    --primary-color: #3c1f76;
-    /*meteorite*/
-    --secondary-color: #17f5b9;
-    /*aqua*/
-    --tertiary-color: #ffa876;
-    /*hit pink*/
+    --primary-color: #22D8BE;
+    --light-color: #eafcf9;
+    --dark-color: #b7f4eb;
+}
+
+html {
+    height: 100%;
+    max-width: 100%;
 }
 
 body {
+    margin: 0px auto;
     font-family: "Prompt", sans-serif;
+    letter-spacing: 2px;
+    background-color: var(--primary-color);
     text-align: center;
-    background-color: var(--tertiary-color);
-    color: var(--primary-color);
-  
+    max-width: 100vw;
+    max-height: 100%;
 }
 
 .container {
@@ -27,79 +31,104 @@ body {
 
 label {
     display: block;
-    font-weight: bolder;
+    margin: 0.5rem 0 0.2rem;
+    /* font-weight: bolder; */
 }
 
 button {
     display: block;
-    margin: 1rem auto;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+    padding: 0.2rem 1rem;
+    border: none;
+    font-family: "Prompt", sans-serif;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.message {
+  font-weight: bolder;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 input {
     display: block;
     margin: auto;
+    border-radius: 1rem;
+    border: none;
+    padding: 0.5rem;
+    text-align: center;
 }
 
 .footer {
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
     text-align: center;
     position: fixed;
     margin: auto;
     left: 0;
     right: 0;    
     bottom: 0;
-    /* max-height: 20%; */
     color: white;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-    padding-inline-start: 0px;
   }
   
-  .footer .footer-header {
+  .footer-header {
     font-weight: bold;
     text-align: center;
     font-size: large;
-    padding: 1rem 0rem 1rem 0rem;
+    padding: 0.5rem auto;
   }
-  
-  ul {
-    padding: 0;
-  }
-  
-  li {
+
+  h3 {
     display: inline;
+  }
+
+  .list-non-bullet {
+    padding: 0;
+    margin: 0.5rem auto;
+  }
+  
+  .list-item-inline {
+    display: inline;
+    padding: 0 4px;
+  }
+
+  .link {
+    text-decoration: none;
+    padding: 4px;
+  }
+
+  .link:hover {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
   }
 
   img {
     width: 30px;
     margin: 2%;
-    max-width: fit-content;
+    /* max-width: fit-content; */
   }
 
-  .navigation {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 1rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+  .nav-container {
+    background-color: var(--dark-color);
+    text-align: center;
+    margin: auto;
+    padding: 2rem 0 1rem;
+    position:sticky;
+    top:0;
+    white-space: nowrap;
   }
   
-  .navigation .nav-brand {
-    font-weight: bold;
+
+  
+  @media screen and (max-width: 800px) {
+    .nav-container {
+      font-size: 1.5vw;
+    }
+    img {
+      width: 20px;
+      margin: 1%;
+        }
   }
-  
-  .nav-brand a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .navigation .nav-pills {
-    text-align: right;
-    margin: 0.6rem 1rem;
-  }
-  
-  .navigation .link {
-    color: white;
-  }
-  
-  
