@@ -31,7 +31,8 @@ body {
 
 label {
   display: block;
-  margin: 0.5rem 0 0.2rem;
+  margin: 1rem ;
+  font-weight: bolder;
   /* font-weight: bolder; */
 }
 
@@ -107,7 +108,7 @@ h3 {
 
 img {
   width: 30px;
-  margin: 2%;
+  margin: 20px;
   /* max-width: fit-content; */
 }
 
@@ -125,20 +126,26 @@ img {
 
 @media screen and (max-width: 800px) {
   .nav-container {
-    font-size: 2.5vw;
+    font-size: 2.2vw;
   }
 
   .footer-header {
-    font-size: 2.5vw;
+    font-size: 2.2vw;
   }
 
   img {
     width: 20px;
-    margin: 1%;
+    margin: 10px;
   }
 
   .list-item-inline {
     display: inline;
     padding: 0 2px;
+  }
+}
+
+@media screen and (max-height: 530px) {
+  .footer {
+    display: none;
   }
 }
