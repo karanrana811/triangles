@@ -11,9 +11,13 @@ button.addEventListener("click", function istriangle(a, b, c) {
     c = Number(angles[2].value);
     const sumofAngles = a + b + c;
     console.log(sumofAngles);
-    if (sumofAngles === 180) {
-        message.innerText = "Angles form a triangle!"
+    if (a > 0 && b > 0 && c > 0) {
+        if (sumofAngles === 180) {
+            message.innerText = "Angles form a triangle!"
+        } else {
+            message.innerText = "Angles do not form a triangle!"
+        }
     } else {
-        message.innerText = "Angles do not form a triangle!"
+        message.innerText = "Please input valid angles!"
     }
 });
